@@ -3,11 +3,11 @@
 .img {
   background-image: url(../images/slider/slide-img-1.jpg);
   background-size: cover;
-  position: relative;
+  position: absolute;
   width: 70%;
   height: $header-photo-height;
   left: $left-margin;
-  top: calc(-#{$header-photo-height / 2});
+  top: calc(850px - #{$header-photo-height / 2});
   z-index: 1;
 
   &__text {
@@ -68,7 +68,7 @@
   width: 410px;
   top: 320px;
   right: -280px;
-  color: black;
+  color: $text-color;
   transform: rotate(90deg);
   text-transform: uppercase;
   font-size: 12px;
