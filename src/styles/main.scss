@@ -1,7 +1,9 @@
-@import "utils";
-@import "fonts";
-@import "typography";
-
-body {
-  background: $c-gray;
-}
+@import "vars";
+@import "header";
+@import "reset";
+@import "header_img";
+@import "welcome";
+@import "subtitle";
+@import "what_we_do";
+@import "process";
+@import "process_items";
