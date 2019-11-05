@@ -41,22 +41,34 @@
   width: $slider-width;
   height: $slider-height;
   border-radius: calc(#{$slider-height / 2});
-  background-color: $yellow-color;
   top: calc(#{$header-photo-height / 2} - #{$slider-height / 2});
   left: calc(-#{$slider-width / 2});
 
   &__arrow {
-    width: 15px;
-    height: 30px;
+    width: 50%;
+    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: $yellow-color;
+    position: absolute;
+    transition-duration: 0.5s;
+
+    &:hover {
+      background-color: rgb(202, 157, 2);
+    }
 
     &--left {
-      background-image: url(../images/slider/arrow-left.svg);
+      left: 0;
+      top: 0;
+      border-top-left-radius: calc(#{$slider-height / 2});
+      border-bottom-left-radius: calc(#{$slider-height / 2});
     }
 
     &--right {
-      background-image: url(../images/slider/arrow-right.svg);
+      top: 0;
+      right: 0;
+      border-top-right-radius: calc(#{$slider-height / 2});
+      border-bottom-right-radius: calc(#{$slider-height / 2});
     }
   }
 }

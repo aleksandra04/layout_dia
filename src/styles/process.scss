@@ -1,7 +1,7 @@
 @import "vars";
 
 .process__container {
-  margin: 0 24px;
+  margin: 0 64px;
   background-color: $second-background-color;
   display: flex;
   justify-content: space-between;
@@ -11,14 +11,6 @@
 .process__descr {
   width: 362px;
   margin-bottom: 291px;
-
-  &__heading {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 140%;
-    margin-bottom: 64px;
-    margin-top: 21px;
-  }
 
   &__text {
     font-size: 16px;

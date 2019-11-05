@@ -26,5 +26,18 @@
     font-weight: 800;
     letter-spacing: 3px;
     line-height: 21px;
+
+    &--light {
+      color: white;
+    }
+  }
+
+  &__heading {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 140%;
+    margin-bottom: 64px;
+    margin-top: 21px;
+    width: 362px;
   }
 }
