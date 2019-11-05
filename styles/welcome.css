@@ -1,0 +1,19 @@
+.welcome {
+  width: 100%;
+  padding-top: 165px;
+  padding-bottom: 160px;
+  background-color: #fcfcfd; }
+  .welcome__block {
+    max-width: 735px;
+    margin: 0 auto; }
+  .welcome__text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #253757;
+    line-height: 150%; }
+
+@media screen and (max-width: 999px) {
+  .welcome__block {
+    margin: 0 30px; } }
+
+/*# sourceMappingURL=welcome.css.map */

@@ -1,0 +1,30 @@
+.features {
+  width: 100%;
+  height: 976px;
+  background: linear-gradient(115deg, #56ccf2 57%, transparent 57%, transparent 83%, #56ccf2 50%), url(../images/features/features-bg.jpg) -850% center no-repeat; }
+
+.features__block {
+  width: 362px;
+  height: 100%;
+  margin-left: 15%;
+  padding-top: 199px; }
+
+.features__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 64px; }
+  .features__item__text {
+    display: inline-block;
+    line-height: 150%;
+    color: white;
+    height: 96px;
+    width: 263px; }
+
+/*# sourceMappingURL=features.css.map */
