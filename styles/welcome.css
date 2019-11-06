@@ -5,7 +5,7 @@
   background-color: #fcfcfd; }
   .welcome__block {
     max-width: 735px;
-    margin: 0 auto; }
+    margin: 0 auto 0 15%; }
   .welcome__text {
     font-size: 24px;
     font-weight: 500;

@@ -27,8 +27,19 @@
     height: 96px;
     width: 263px; }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .features {
-    background-color: #56ccf2; } }
+    background-color: #56ccf2;
+    background-image: none; }
+  .features__block {
+    margin-left: 30px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1500px) {
+  .features {
+    background: linear-gradient(115deg, #56ccf2 65%, transparent 57%, transparent 89%, #56ccf2 50%), url(../images/features/features-bg.jpg) 150px center no-repeat; } }
+
+@media screen and (max-width: 415px) {
+  .features__block {
+    width: 300px; } }
 
 /*# sourceMappingURL=features.css.map */

@@ -31,4 +31,8 @@
     margin-top: 21px;
     width: 362px; }
 
+@media screen and (max-width: 415px) {
+  .subtitle__heading {
+    width: 300px; } }
+
 /*# sourceMappingURL=subtitle.css.map */

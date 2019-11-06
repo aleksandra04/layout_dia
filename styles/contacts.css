@@ -33,4 +33,8 @@
     width: 32px;
     height: 32px; }
 
+@media screen and (max-width: 415px) {
+  .contacts__header {
+    width: 300px; } }
+
 /*# sourceMappingURL=contacts.css.map */
