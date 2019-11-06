@@ -48,3 +48,9 @@
       url(../images/features/features-bg.jpg) 150px center no-repeat;
   }
 }
+
+@media screen and (max-width: 415px) {
+  .features__block {
+    width: 300px;
+  }
+}
