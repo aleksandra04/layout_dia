@@ -42,3 +42,12 @@
   }
 
 }
+
+@media screen  and (max-width: 415px) {
+  .subtitle {
+
+    &__heading {
+      width: 300px;
+    }
+  }
+}

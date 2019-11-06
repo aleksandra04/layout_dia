@@ -4,8 +4,7 @@
   display: flex;
   width: calc(#{$process-card-width * 2} + #{$process-card-spaceX});
   justify-content: space-between;
-  position: relative;
-
+  height: calc(#{$process-card-height * 2} + #{$process-card-spaceY});
 }
 
 .column {
@@ -14,7 +13,7 @@
   width: $process-card-width;
   height: calc(#{$process-card-height * 2} + #{$process-card-spaceY});
   justify-content: space-between;
-  position: absolute;
+  position: relative;
   z-index: 1;
 
   &--left {
@@ -23,7 +22,7 @@
 
   &--right {
     top: 65px;
-    left: calc(#{$process-card-width} + #{$process-card-spaceX});
+    left: #{$process-card-spaceX};
   }
 }
 
@@ -31,6 +30,8 @@
   padding: 48px 32px;
   background-color: white;
   box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+  height: $process-card-height;
+  box-sizing: border-box;
 
   &__text {
     font-size: 12.6px;
@@ -84,23 +85,47 @@
 
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .process__items {
-    width: 400px;
-    align-items: center;
+    width: 90%;
   }
 
   .column {
-    justify-content: space-around;
-    width: 200px;
+    height: 520px;
 
     &--left {
-      top: 10px;
+      top: 100px;
     }
 
     &--right {
-      top: 40px;
-      left: calc(#{$process-card-width} + #{$process-card-spaceX});
+      top: 35px;
     }
+  }
+
+  .process__card {
+    padding: 24px 16px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .column {
+    width: 50%;
+    height: 450px;
+
+    &--left {
+      top: 150px;
+    }
+
+    &--right {
+      top: 100px;
+      left: 40px;
+    }
+  }
+
+  .process__card {
+    padding: 24px 16px;
+    height: 200px;
   }
 }

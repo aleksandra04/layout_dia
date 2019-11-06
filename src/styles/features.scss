@@ -30,8 +30,21 @@
   }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .features {
     background-color: $main-color;
+    background-image: none;
+  }
+
+  .features__block {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1500px) {
+  .features {
+    background: linear-gradient(115deg, $main-color 65%, transparent 57%,
+    transparent 89%, $main-color 50%),
+      url(../images/features/features-bg.jpg) 150px center no-repeat;
   }
 }

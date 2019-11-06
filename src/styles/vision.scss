@@ -2,7 +2,7 @@
 
 .vision {
   width: 100%;
-  height: 864px;
+  height: 865px;
   background-color: $second-background-color;
   box-sizing: border-box;
   border: 1px solid $second-background-color;
@@ -32,12 +32,43 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .vision__descr {
+
+    &__header {
+      text-align: center;
+    }
+  }
+}
+
 @media screen and (max-width: 999px) {
   .vision__descr {
     margin: 220px auto auto;
 
     &__text {
       margin-bottom: 35px;
+    }
+  }
+
+  .vision-rec__middle--yelloy {
+    left: 45%;
+  }
+
+  .vision-rec {
+
+    &__biggest {
+      display: none;
+    }
+
+    &__big {
+
+      &--right {
+        display: none;
+      }
+    }
+
+    &__small {
+      left: 80%;
     }
   }
 }
@@ -52,7 +83,7 @@
     width: 154px;
     height: 61px;
     top: 613px;
-    left: 1320px;
+    left: 83%;
     border: 5px solid $main-color;
     border-radius: 30.5px;
   }
@@ -61,13 +92,13 @@
     width: 153px;
     height: 65px;
     top: 478px;
-    left: 254px;
+    left: 16%;
     border: 5px solid #03d542;
     border-radius: 32.5px;
 
     &--right {
       top: 327px;
-      left: 1257px;
+      left: 79%;
     }
   }
 
@@ -75,18 +106,18 @@
     width: 86px;
     height: 34px;
     top: 249px;
-    left: 224px;
+    left: 14%;
     border: 3px solid #f25656;
     border-radius: 17px;
 
     &--right {
       top: 562px;
-      left: 1210px;
+      left: 80%;
     }
 
     &--yellow {
-      top: 453px;
-      left: 1440px;
+      top: 52%;
+      left: 85%;
       border: 3px solid #fcc304;
     }
   }
@@ -95,7 +126,7 @@
     width: 94px;
     height: 37px;
     top: 698px;
-    left: 121px;
+    left: 8%;
     border: 5px solid #bc04fc;
     border-radius: 18px;
   }
@@ -104,7 +135,7 @@
     width: 67px;
     height: 27px;
     top: 541px;
-    left: 75px;
+    left: 5%;
     border: 5px solid #56ccf2;
     border-radius: 13px;
   }
@@ -113,19 +144,19 @@
     width: 45px;
     height: 18px;
     top: 240px;
-    left: 392px;
+    left: 25%;
     border: 3px solid #fcc304;
     border-radius: 9px;
 
     &--bottom {
       top: 628px;
-      left: 481px;
+      left: 30%;
       border: 5px solid #fcc304;
     }
 
     &--purple {
       top: 677px;
-      left: 1007px;
+      left: 63%;
       border: 3px solid #bc04fc;
     }
   }
@@ -134,7 +165,7 @@
     width: 54px;
     height: 21px;
     top: 276px;
-    left: 1441px;
+    left: 90%;
     border: 5px solid #bc04fc;
     border-radius: 10px;
   }

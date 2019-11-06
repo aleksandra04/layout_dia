@@ -1,11 +1,11 @@
 @import "vars";
 
 .process__container {
-  margin: 0 64px;
+  margin: 0 4%;
   background-color: $second-background-color;
   display: flex;
   justify-content: space-between;
-  padding: 160px 222px 0 163px;
+  padding: 160px 222px 0 11%;
   height: 816px;
   box-sizing: border-box;
 }
@@ -25,8 +25,21 @@
     flex-direction: column;
     padding: 50px 20px 0;
     justify-content: flex-start;
-    margin: 0 auto;
-    height: 950px;
+    margin: 0 10px;
+    height: 900px;
+    position: relative;
+  }
+}
+
+@media screen and (min-width:1000px) and (max-width: 1024px) {
+  .process__container {
+    padding: 100px 0 0 85px;
+    justify-content: space-between;
+    height: 616px;
   }
 
+  .process__descr {
+    width: 340px;
+    margin-right: 20px;
+  }
 }

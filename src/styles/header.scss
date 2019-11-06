@@ -17,7 +17,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  margin: 0 26% 0 14%;
+  margin: 0 26% 0 $left-margin;
   align-items: center;
 
   &__logo {
@@ -67,16 +67,12 @@
 
     &__items {
       flex-direction: column;
-
-      &__position {
-        padding: 0;
-      }
     }
   }
 
   .header__text {
-    width: 90%;
-    margin: 20px auto 0;
+    width: 80%;
+    margin: 20px 15% 0;
 
     &__name {
       font-size: 30px;
@@ -88,7 +84,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1000px) and (max-width: 1305px) {
   .header__text__descr {
     margin-bottom: 22px;
   }
