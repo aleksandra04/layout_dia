@@ -1,0 +1,8 @@
+@import "vars";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $left-margin 83px;
+  background-color: $second-background-color;
+}

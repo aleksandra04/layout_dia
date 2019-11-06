@@ -1,0 +1,40 @@
+@import "vars";
+
+.connection {
+  width: 100%;
+  background-color: $second-background-color;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 $left-margin 136px;
+
+  &__form {
+    width: 55%;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+
+  &__input {
+    display: block;
+    height: 88px;
+    border-bottom: 1px solid #e1e1e1;
+    background-color: $second-background-color;
+
+    &::placeholder {
+      font-weight: bold;
+      font-size: 14.4px;
+      line-height: 150%;
+      color: #152032;
+      transform: translateY(15px);
+    }
+  }
+}
+
+input:last-of-type {
+  margin-bottom: 121px;
+}

@@ -1,0 +1,142 @@
+@import "vars";
+
+.vision {
+  width: 100%;
+  height: 864px;
+  background-color: $second-background-color;
+  box-sizing: border-box;
+  border: 1px solid $second-background-color;
+  position: relative;
+}
+
+.vision__descr {
+  width: 47%;
+  margin: 320px auto auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 100%;
+    margin-bottom: 57px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .vision__descr {
+    margin: 220px auto auto;
+
+    &__text {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.vision-rec {
+  opacity: 0.5;
+  transform: rotate(-65.1deg);
+  position: absolute;
+  box-sizing: border-box;
+
+  &__biggest {
+    width: 154px;
+    height: 61px;
+    top: 613px;
+    left: 1320px;
+    border: 5px solid $main-color;
+    border-radius: 30.5px;
+  }
+
+  &__big {
+    width: 153px;
+    height: 65px;
+    top: 478px;
+    left: 254px;
+    border: 5px solid #03d542;
+    border-radius: 32.5px;
+
+    &--right {
+      top: 327px;
+      left: 1257px;
+    }
+  }
+
+  &__middle {
+    width: 86px;
+    height: 34px;
+    top: 249px;
+    left: 224px;
+    border: 3px solid #f25656;
+    border-radius: 17px;
+
+    &--right {
+      top: 562px;
+      left: 1210px;
+    }
+
+    &--yellow {
+      top: 453px;
+      left: 1440px;
+      border: 3px solid #fcc304;
+    }
+  }
+
+  &__middle1 {
+    width: 94px;
+    height: 37px;
+    top: 698px;
+    left: 121px;
+    border: 5px solid #bc04fc;
+    border-radius: 18px;
+  }
+
+  &__middle2 {
+    width: 67px;
+    height: 27px;
+    top: 541px;
+    left: 75px;
+    border: 5px solid #56ccf2;
+    border-radius: 13px;
+  }
+
+  &__smaller {
+    width: 45px;
+    height: 18px;
+    top: 240px;
+    left: 392px;
+    border: 3px solid #fcc304;
+    border-radius: 9px;
+
+    &--bottom {
+      top: 628px;
+      left: 481px;
+      border: 5px solid #fcc304;
+    }
+
+    &--purple {
+      top: 677px;
+      left: 1007px;
+      border: 3px solid #bc04fc;
+    }
+  }
+
+  &__small {
+    width: 54px;
+    height: 21px;
+    top: 276px;
+    left: 1441px;
+    border: 5px solid #bc04fc;
+    border-radius: 10px;
+  }
+
+}

@@ -6,11 +6,12 @@
   display: flex;
   justify-content: space-between;
   padding: 160px 222px 0 163px;
+  height: 816px;
+  box-sizing: border-box;
 }
 
 .process__descr {
   width: 362px;
-  margin-bottom: 291px;
 
   &__text {
     font-size: 16px;
@@ -25,9 +26,7 @@
     padding: 50px 20px 0;
     justify-content: flex-start;
     margin: 0 auto;
+    height: 950px;
   }
 
-  .process__descr {
-    margin-bottom: 100px;
-  }
 }

@@ -93,5 +93,14 @@
   .column {
     justify-content: space-around;
     width: 200px;
+
+    &--left {
+      top: 10px;
+    }
+
+    &--right {
+      top: 40px;
+      left: calc(#{$process-card-width} + #{$process-card-spaceX});
+    }
   }
 }

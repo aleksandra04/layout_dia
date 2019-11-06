@@ -1,0 +1,19 @@
+@import "vars";
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.5s;
+
+  &:hover {
+    color: $text-color;
+  }
+
+  &--black {
+    color: $text-color;
+    font-weight: bold;
+    transition-duration: 0.5s;
+  }
+}
