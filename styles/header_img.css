@@ -37,18 +37,29 @@
   width: 160px;
   height: 65px;
   border-radius: calc(32.5px);
-  background-color: #fcc304;
   top: calc(320px - 32.5px);
   left: calc(-80px); }
   .slider__arrow {
-    width: 15px;
-    height: 30px;
+    width: 50%;
+    height: 100%;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-color: #fcc304;
+    position: absolute;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s; }
+    .slider__arrow:hover {
+      background-color: #ca9d02; }
     .slider__arrow--left {
-      background-image: url(../images/slider/arrow-left.svg); }
+      left: 0;
+      top: 0;
+      border-top-left-radius: calc(32.5px);
+      border-bottom-left-radius: calc(32.5px); }
     .slider__arrow--right {
-      background-image: url(../images/slider/arrow-right.svg); }
+      top: 0;
+      right: 0;
+      border-top-right-radius: calc(32.5px);
+      border-bottom-right-radius: calc(32.5px); }
 
 .networks {
   display: -webkit-box;
