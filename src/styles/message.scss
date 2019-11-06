@@ -28,6 +28,10 @@
       margin-bottom: 80px;
     }
   }
+
+  .button:last-child {
+    align-self: center;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1300px) {
