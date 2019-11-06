@@ -1,0 +1,11 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15% 83px;
+  background-color: #fcfcfd; }
+
+/*# sourceMappingURL=footer.css.map */

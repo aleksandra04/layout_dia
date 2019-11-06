@@ -45,21 +45,6 @@
     line-height: 40px;
     border-bottom: 4px solid #fcc304; }
 
-.link {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s; }
-  .link:hover {
-    color: #253757; }
-  .link--black {
-    color: #253757;
-    font-weight: bold;
-    -webkit-transition-duration: 0.5s;
-            transition-duration: 0.5s; }
-
 .header__text {
   margin: 85px 30% 0 325px;
   width: 50%; }
@@ -71,19 +56,6 @@
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 42px; }
-
-.button {
-  width: 205px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: white;
-  border: none;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s; }
-  .button:hover {
-    background-color: #fcc304; }
-    .button:hover .link--black {
-      color: white; }
 
 @media screen and (max-width: 999px) {
   .nav {

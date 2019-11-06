@@ -1,0 +1,22 @@
+.button {
+  width: 205px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  border: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: #253757; }
+  .button:hover {
+    background-color: #fcc304;
+    color: white; }
+  .button--blue {
+    background-color: #2f80ed;
+    color: white; }
+    .button--blue:hover {
+      background-color: #56ccf2; }
+
+/*# sourceMappingURL=button.css.map */

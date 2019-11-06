@@ -1,0 +1,16 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
+  .link:hover {
+    color: #253757; }
+  .link--black {
+    color: #253757;
+    font-weight: bold;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s; }
+
+/*# sourceMappingURL=link.css.map */
