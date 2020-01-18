@@ -2,36 +2,50 @@
 
 .process__items {
   display: flex;
-  width: calc(#{$process-card-width * 2} + #{$process-card-spaceX});
-  justify-content: space-between;
-  height: calc(#{$process-card-height * 2} + #{$process-card-spaceY});
-}
+  width: 650px;
+  justify-content: space-around;
+  flex-flow: row wrap;
 
-.column {
-  display: flex;
-  flex-direction: column;
-  width: $process-card-width;
-  height: calc(#{$process-card-height * 2} + #{$process-card-spaceY});
-  justify-content: space-between;
-  position: relative;
-  z-index: 1;
-
-  &--left {
-    top: 176px;
-  }
-
-  &--right {
-    top: 65px;
-    left: #{$process-card-spaceX};
+  @media screen and (max-width: 620px) {
+    width: 300px;
   }
 }
 
 .process__card {
+  width: 240px;
   padding: 48px 32px;
   background-color: white;
   box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
   height: $process-card-height;
   box-sizing: border-box;
+  margin: 40px 0 0;
+  position: relative;
+
+  @media screen and (max-width: 620px) {
+    max-width: 350px;
+    margin: 20px 0 0;
+    padding: 24px 16px;
+    height: 180px;
+  }
+
+  &--left {
+    top: 175px;
+    z-index: 1;
+
+    @media screen and (max-width: 620px) {
+      top: 0;
+    }
+  }
+
+  &--right {
+    top: 65px;
+    margin-right: 0;
+    z-index: 1;
+
+    @media screen and (max-width: 620px) {
+      top: 0;
+    }
+  }
 
   &__text {
     font-size: 12.6px;
@@ -81,51 +95,5 @@
     &--red {
       color: rgb(243, 95, 95);
     }
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-  .process__items {
-    width: 90%;
-  }
-
-  .column {
-    height: 520px;
-
-    &--left {
-      top: 100px;
-    }
-
-    &--right {
-      top: 35px;
-    }
-  }
-
-  .process__card {
-    padding: 24px 16px;
-    height: 250px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
-  .column {
-    width: 50%;
-    height: 450px;
-
-    &--left {
-      top: 150px;
-    }
-
-    &--right {
-      top: 100px;
-      left: 40px;
-    }
-  }
-
-  .process__card {
-    padding: 24px 16px;
-    height: 200px;
   }
 }

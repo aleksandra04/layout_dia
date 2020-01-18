@@ -11,6 +11,7 @@
 
 .vision__descr {
   width: 47%;
+  max-width: 754px;
   margin: 320px auto auto;
   display: flex;
   flex-direction: column;
@@ -21,6 +22,10 @@
     font-size: 48px;
     line-height: 100%;
     margin-bottom: 57px;
+
+    @media (max-width: 481px) {
+      font-size: 36px;
+    }
   }
 
   &__text {
@@ -78,6 +83,10 @@
   transform: rotate(-65.1deg);
   position: absolute;
   box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 
   &__biggest {
     width: 154px;

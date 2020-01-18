@@ -1,15 +1,29 @@
 @import "vars";
 
-.connection {
+.connection__container {
   width: 100%;
   background-color: $second-background-color;
+}
+
+.connection {
+  max-width: 1146px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0 $left-margin 136px;
+  margin: 0 $left-margin;
+  padding-bottom: 136px;
+
+  @media screen and (min-width: 1601px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1300px) {
+    padding: 0 40px 136px;
+    margin: 0 20px;
+  }
 
   &__form {
-    width: 55%;
+    width: 40%;
   }
 }
 
@@ -18,7 +32,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 1200px;
-    padding: 0 30px 50px;
+    padding: 0 30px 10px;
 
     &__form {
       width: 90%;
@@ -31,12 +45,6 @@
 
   .button:last-child {
     align-self: center;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1300px) {
-  .connection {
-    padding: 0 40px 136px;
   }
 }
 

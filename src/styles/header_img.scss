@@ -3,18 +3,29 @@
 .img {
   background-image: url(../images/slider/slide-img-1.jpg);
   background-size: cover;
-  position: absolute;
-  width: 70%;
+  position: relative;
+  width: $header-photo-width;
+  max-width: 1146px;
+  min-width: 320px;
   height: $header-photo-height;
-  left: $left-margin;
-  top: calc(850px - #{$header-photo-height / 2});
-  z-index: 1;
+  margin: 0 auto;
+  top: -320px;
+
+  @media screen and (max-width: 630px) {
+    height: 500px;
+    top: -250px;
+    width: 100%;
+  }
 
   &__text {
     position: absolute;
-    top: 470px;
+    top: 73%;
     left: 90px;
     width: 260px;
+
+    @media screen and (max-width: 450px) {
+      left: 20px;
+    }
 
     &__header {
       font-size: 12px;
@@ -43,6 +54,11 @@
   border-radius: calc(#{$slider-height / 2});
   top: calc(#{$header-photo-height / 2} - #{$slider-height / 2});
   left: calc(-#{$slider-width / 2});
+
+  @media screen and (max-width: 630px) {
+    top: 467.5px;
+    left: calc(50% - #{$slider-width /2});
+  }
 
   &__arrow {
     width: 50%;
@@ -85,10 +101,21 @@
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 800;
-}
 
-@media screen and (max-width: 768px) {
-  .networks {
+  @media screen and (max-width: 768px) {
     right: -240px;
+  }
+
+  @media screen and (max-width: 630px) {
+    transform: none;
+    left: 0;
+    right: 0;
+    top: 560px;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 450px) {
+    width: 310px;
   }
 }

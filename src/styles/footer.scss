@@ -1,8 +1,27 @@
 @import "vars";
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 $left-margin 83px;
   background-color: $second-background-color;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1145px;
+    margin: 0 $left-margin;
+    padding-bottom: 83px;
+
+    @media screen and (min-width: 1601px) {
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 1200px) {
+      justify-content: space-around;
+      margin: 0 50px;
+    }
+
+    @media screen and (max-width: 630px) {
+      flex-direction: column;
+
+    }
+  }
 }

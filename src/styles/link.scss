@@ -16,4 +16,11 @@
     font-weight: bold;
     transition-duration: 0.5s;
   }
+
+  &--footer {
+    @media (max-width: 630px) {
+      order: 2;
+      text-align: left;
+    }
+  }
 }
