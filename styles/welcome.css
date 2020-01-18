@@ -5,15 +5,17 @@
   background-color: #fcfcfd; }
   .welcome__block {
     max-width: 735px;
-    margin: 0 auto 0 15%; }
+    margin: 0 30px 0 15%; }
+    @media screen and (min-width: 1601px) {
+      .welcome__block {
+        margin: 0 auto; } }
+    @media screen and (max-width: 769px) {
+      .welcome__block {
+        margin: 0 30px; } }
   .welcome__text {
     font-size: 24px;
     font-weight: 500;
     color: #253757;
     line-height: 150%; }
-
-@media screen and (max-width: 999px) {
-  .welcome__block {
-    margin: 0 30px; } }
 
 /*# sourceMappingURL=welcome.css.map */

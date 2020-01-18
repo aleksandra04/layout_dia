@@ -3,33 +3,65 @@
   position: relative;
   padding-top: 160px;
   padding-bottom: 162px; }
+  @media screen and (max-width: 768px) {
+    .what_we_do {
+      padding-bottom: 50px;
+      padding-top: 60px; } }
   .what_we_do__heading {
     position: absolute;
-    width: 561px;
+    width: 300px;
     font-size: 48px;
     font-weight: 900px;
     top: -24px;
-    left: calc((100% - 561px) / 2);
-    text-align: center;
+    left: calc((100vw - 300px) / 2);
     line-height: 48px;
     color: #253757; }
+    @media screen and (max-width: 450px) {
+      .what_we_do__heading {
+        font-size: 42px; } }
   .what_we_do__items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1049px;
+    width: 65%;
     margin-left: 15%; }
+    @media screen and (min-width: 1601px) {
+      .what_we_do__items {
+        margin: 0 auto; } }
+    @media screen and (max-width: 768px) {
+      .what_we_do__items {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 264px;
+        margin: 0 auto;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+    @media screen and (max-width: 1290px) {
+      .what_we_do__items {
+        margin: 0 auto;
+        width: 90%; } }
 
 .section {
-  width: 264px;
-  margin-right: 125px; }
+  width: 264px; }
+  @media screen and (max-width: 1290px) {
+    .section {
+      margin-right: 20px; } }
   .section__img {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    margin-bottom: 64px; }
+    margin: auto 0 64px;
+    display: block; }
+    @media screen and (max-width: 768px) {
+      .section__img {
+        margin: 32px auto; } }
   .section__heading {
     font-size: 20px;
     font-weight: 900;
@@ -37,17 +69,5 @@
     line-height: 140%; }
   .section__text {
     line-height: 150%; }
-
-@media screen and (max-width: 999px) {
-  .what_we_do__items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .section {
-    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=what_we_do.css.map */

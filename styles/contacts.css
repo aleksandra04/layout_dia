@@ -4,8 +4,11 @@
   line-height: 140%;
   margin-bottom: 43px;
   margin-top: 19px;
-  width: 362px;
+  max-width: 362px;
   color: #253757; }
+  @media (max-width: 481px) {
+    .contacts__header {
+      font-size: 24px; } }
 
 .contacts__name {
   font-weight: 800;
@@ -25,6 +28,9 @@
   text-decoration: none;
   letter-spacing: 1.5px;
   text-transform: uppercase; }
+  @media (max-width: 481px) {
+    .contacts__value {
+      font-size: 18px; } }
 
 .networks__icon {
   padding-top: 12px; }
@@ -32,9 +38,8 @@
     margin-right: 40px;
     width: 32px;
     height: 32px; }
-
-@media screen and (max-width: 415px) {
-  .contacts__header {
-    width: 300px; } }
+    @media (max-width: 481px) {
+      .networks__icon__item {
+        margin-right: 20px; } }
 
 /*# sourceMappingURL=contacts.css.map */

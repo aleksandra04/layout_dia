@@ -2,41 +2,47 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(480px + 58px);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: calc(512px + 128px); }
-
-.column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+  width: 650px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 240px;
-  height: calc(512px + 128px);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  z-index: 1; }
-  .column--left {
-    top: 176px; }
-  .column--right {
-    top: 65px;
-    left: 58px; }
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  @media screen and (max-width: 620px) {
+    .process__items {
+      width: 300px; } }
 
 .process__card {
+  width: 240px;
   padding: 48px 32px;
   background-color: white;
   -webkit-box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
           box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
   height: 256px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  margin: 40px 0 0;
+  position: relative; }
+  @media screen and (max-width: 620px) {
+    .process__card {
+      max-width: 350px;
+      margin: 20px 0 0;
+      padding: 24px 16px;
+      height: 180px; } }
+  .process__card--left {
+    top: 175px;
+    z-index: 1; }
+    @media screen and (max-width: 620px) {
+      .process__card--left {
+        top: 0; } }
+  .process__card--right {
+    top: 65px;
+    margin-right: 0;
+    z-index: 1; }
+    @media screen and (max-width: 620px) {
+      .process__card--right {
+        top: 0; } }
   .process__card__text {
     font-size: 12.6px;
     line-height: 150%;
@@ -70,31 +76,5 @@
       color: #0bd647; }
     .card__background__number--red {
       color: #f35f5f; }
-
-@media screen and (max-width: 768px) {
-  .process__items {
-    width: 90%; }
-  .column {
-    height: 520px; }
-    .column--left {
-      top: 100px; }
-    .column--right {
-      top: 35px; }
-  .process__card {
-    padding: 24px 16px;
-    height: 250px; } }
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .column {
-    width: 50%;
-    height: 450px; }
-    .column--left {
-      top: 150px; }
-    .column--right {
-      top: 100px;
-      left: 40px; }
-  .process__card {
-    padding: 24px 16px;
-    height: 200px; } }
 
 /*# sourceMappingURL=process_items.css.map */

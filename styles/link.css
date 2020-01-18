@@ -12,5 +12,11 @@
     font-weight: bold;
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s; }
+  @media (max-width: 630px) {
+    .link--footer {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      text-align: left; } }
 
 /*# sourceMappingURL=link.css.map */
