@@ -1,0 +1,67 @@
+@import "vars";
+
+.features {
+  width: 100%;
+  height: 976px;
+  background: linear-gradient(115deg, $main-color 59%, transparent 57%,
+  transparent 83%, $main-color 50%),
+    url(../images/features/features-bg.jpg) 46vw center no-repeat;
+
+  @media screen and (min-width: 1601px) {
+    background: linear-gradient(115deg, $main-color 57%, transparent 57%,
+    transparent 83%, $main-color 50%),
+      url(../images/features/features-bg.jpg) right no-repeat;
+  }
+}
+
+.features__block {
+  max-width: 1087px;
+  height: 100%;
+  margin-left: $left-margin;
+  padding-top: 199px;
+
+  @media screen and (min-width: 1601px) {
+    margin: 0 auto;
+  }
+}
+
+.features__item {
+  max-width: 362px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    margin-bottom: 32px;
+    align-items: flex-start;
+  }
+
+  &__text {
+    display: inline-block;
+    line-height: 150%;
+    color: white;
+    height: 96px;
+    max-width: 263px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features {
+    background-color: $main-color;
+    background-image: none;
+  }
+
+  .features__block {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1500px) {
+  .features {
+    background: linear-gradient(115deg, $main-color 65%, transparent 57%,
+    transparent 89%, $main-color 50%),
+      url(../images/features/features-bg.jpg) left no-repeat;
+  }
+}

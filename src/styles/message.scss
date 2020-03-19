@@ -1,0 +1,76 @@
+@import "vars";
+
+.connection__container {
+  width: 100%;
+  background-color: $second-background-color;
+}
+
+.connection {
+  max-width: 1146px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0 $left-margin;
+  padding-bottom: 136px;
+
+  @media screen and (min-width: 1601px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1300px) {
+    padding: 0 40px 136px;
+    margin: 0 20px;
+  }
+
+  &__form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .connection {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 1200px;
+    padding: 0 30px 10px;
+
+    &__form {
+      width: 90%;
+    }
+
+    input:last-of-type {
+      margin-bottom: 80px;
+    }
+  }
+
+  .button:last-child {
+    align-self: center;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+
+  &__input {
+    display: block;
+    height: 50px;
+    margin-top: 38px;
+    border-bottom: 1px solid #e1e1e1;
+    background-color: $second-background-color;
+    outline: none;
+
+    &::placeholder {
+      font-weight: bold;
+      font-size: 14.4px;
+      line-height: 30px;
+      color: #152032;
+    }
+  }
+}
+
+input:last-of-type {
+  margin-bottom: 121px;
+}

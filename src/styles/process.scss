@@ -1,33 +1,58 @@
 @import "vars";
 
-.process__container {
-  margin: 0 64px;
+.process {
+  padding: 0 4%;
+
+  @media screen and (max-width: 1023px) {
+    padding: 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0;
+  }
+}
+
+.process__background {
   background-color: $second-background-color;
+
+  padding: 130px 100px 0 11%;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 1601px) {
+    padding: 160px auto 0;
+  }
+
+  @media screen and (max-width: 1290px) {
+    padding: 160px 20px 0;
+  }
+
+  @media screen and (max-width: 830px) {
+    height: 1150px;
+    padding-top: 100px;
+  }
+}
+
+.process__container {
   display: flex;
   justify-content: space-between;
-  padding: 160px 222px 0 163px;
+  max-width: 1087px;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 1601px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 830px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .process__descr {
-  width: 362px;
-  margin-bottom: 291px;
+  max-width: 362px;
 
   &__text {
     font-size: 16px;
     line-height: 150%;
-
-  }
-}
-
-@media screen and (max-width: 999px) {
-  .process__container {
-    flex-direction: column;
-    padding: 50px 20px 0;
-    justify-content: flex-start;
-    margin: 0 auto;
-  }
-
-  .process__descr {
-    margin-bottom: 100px;
   }
 }
